@@ -1,0 +1,71 @@
+.price-input{
+    width: 100%;
+    display: flex;
+    margin: 0 0 35px;
+}
+.price-input .field{
+    background:green; 
+    display: flex; 
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+.field input{
+    width: 100%;
+    height: 100%;
+    margin-left: 12px; 
+    text-align: center;
+    border: 1px solid #999;
+    outline: none;
+    border-radius: 5px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+}
+
+.price-input .separator{
+    justify-content: center; 
+    display: flex; 
+    align-items: center; 
+    font-size: 23px;
+    width: 130px;
+}
+.slider{
+    height: 5px; 
+    border-radius: 5px;
+    background: #ddd; 
+    border-radius: 5px; 
+    position: relative;
+}
+.slider .progress{
+    height: 5px; 
+    border-radius: 5px;
+    position: absolute; 
+    left:15%; 
+    right:15%;  
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background: greenyellow;
+}
+.range-input{
+    position:relative;
+}
+.range-input input{
+    position: absolute; 
+    pointer-events:none;
+    top: -5px; 
+    height: 5px; 
+    width: 100%; 
+    -webkit-appearance: none; 
+    background:none;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance:none; 
+    pointer-events:auto; 
+    border-radius: 50%; 
+    height:17px; 
+    weight:17px; 
+    background: green;
+}
